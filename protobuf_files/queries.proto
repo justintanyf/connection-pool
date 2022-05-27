@@ -1,0 +1,24 @@
+syntax = "proto3";
+option go_package = "./entry-task-proto";
+
+message Login {
+  string account = 1;
+  string password = 2;
+}
+
+message UpdateNickname {
+  int32 id = 1;
+  string account = 2;
+  string nickname = 3;
+}
+
+message UpdateFileName {
+  int32 id = 1;
+  string account = 2;
+  string fileName = 3;
+}
+
+message GetNicknameAndFileName {
+  int32 id =1;
+  string account = 2;
+}

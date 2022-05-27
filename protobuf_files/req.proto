@@ -1,0 +1,17 @@
+syntax = "proto3";
+option go_package = "./entry-task-proto";
+/*
+protobuf serialisation contains
+int is either
+0 for login,
+1 for update nickname,
+2 for update imagePath,
+3 for request nickname and imagePath
+payload, contains another protbuf serialisation that contains the details of another
+ */
+
+message Req {
+  int32 typeOfMessage = 1;
+  bytes payload = 2;
+}
+
