@@ -40,7 +40,7 @@ go run fillwithdummydata.go
 wrk -c150 -t2 -d5s -s stresstest.lua http://127.0.0.1:8081/
 ```
 
-Program is capable of sustaining 300 requests without crashing
+Program is capable of sustaining 4000 requests without crashing
 
 ### <b>Functionality:</b>
 
@@ -56,5 +56,9 @@ Program is capable of sustaining 300 requests without crashing
 - Implement usage of sockets
 - Implement the use of protobuf
 - Implement cache-aside and write-through cache using Redis
+
+<i>Version 2</i>
+- Implement connection pool
+- Further optimisations
 
 
